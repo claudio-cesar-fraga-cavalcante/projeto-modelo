@@ -64,7 +64,7 @@ dependencies = [
     { name = "python-dotenv" },
 ]
 
-[package.optional-dependencies]
+[package.dev-dependencies]
 dev = [
     { name = "pyright" },
     { name = "pytest" },
@@ -73,14 +73,15 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [
-    { name = "pyright", marker = "extra == 'dev'" },
-    { name = "pytest", marker = "extra == 'dev'" },
-    { name = "pytest-xdist", marker = "extra == 'dev'" },
-    { name = "python-dotenv", specifier = ">=1.1.0" },
-    { name = "ruff", marker = "extra == 'dev'" },
+requires-dist = [{ name = "python-dotenv", specifier = ">=1.1.0" }]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "pyright" },
+    { name = "pytest" },
+    { name = "pytest-xdist" },
+    { name = "ruff" },
 ]
-provides-extras = ["dev"]
 
 [[package]]
 name = "pygments"
