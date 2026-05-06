@@ -35,8 +35,13 @@ Homepage = "https://www.otaviomiranda.com.br/"
 # Issues = "https://github.com/me/spam/issues"
 # Changelog = "https://github.com/me/spam/blob/master/CHANGELOG.md"
 
-[project.optional-dependencies]
-dev = ["ruff", "pyright", "pytest", "pytest-xdist"]
+[dependency-groups]
+dev = [
+    "ruff",
+    "pyright",
+    "pytest",
+    "pytest-xdist"
+]
 
 [project.scripts]
 # Define os comandos de console. A chave ('project1') é o comando.
@@ -117,6 +122,7 @@ typeCheckingMode = "strict"
 pythonVersion = "3.13"
 include = ["src", 'tests']
 exclude = [
+    "**/.*",
     "**/venv",
     "**/.venv",
     "**/env",
