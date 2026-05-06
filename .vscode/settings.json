@@ -1,18 +1,15 @@
 {
   "window.zoomLevel": 0,
-  "breadcrumbs.enabled": true,
   "editor.fontSize": 18,
   "debug.console.fontSize": 18,
   "terminal.integrated.fontSize": 18,
   "editor.glyphMargin": true,
-  "workbench.activityBar.location": "default",
-  "editor.lineNumbers": "on",
   "files.eol": "\n", // Final de linha sempre será LF
   "workbench.editor.labelFormat": "short",
   "editor.tabSize": 2,
-  "editor.rulers": [79, 88, 120],
-  "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
-  "workbench.colorTheme": "OM Theme (Default Dracula Italic)",
+  "editor.rulers": [79, 88],
+  "workbench.iconTheme": "vs-seti",
+  "workbench.colorTheme": "Dracula Theme Soft",
   "explorer.compactFolders": false,
   "editor.minimap.enabled": false,
   "workbench.editor.enablePreview": false,
@@ -27,19 +24,8 @@
       "source.organizeImports.ruff": "explicit"
     }
   },
-  "python.defaultInterpreterPath": ".\\.venv\\Scripts\\python.exe", // ou ./.venv/bin/python Mac/Linux
   "python.analysis.autoImportCompletions": true,
   "python.terminal.activateEnvInCurrentTerminal": true,
-  "python.terminal.activateEnvironment": true,
   "python.languageServer": "Pylance",
-  "python.venvPath": ".venv",
-
-  // 🛠 Formatação e Lint
-  "editor.defaultFormatter": "charliermarsh.ruff",
-  "editor.formatOnSave": true,
-
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
-  },
 
 }
